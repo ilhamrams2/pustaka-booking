@@ -18,6 +18,6 @@ class Model_latihan1 extends Model
 
         return $this->hasil;
     }
-
+    //ngetes commit
     
 }
