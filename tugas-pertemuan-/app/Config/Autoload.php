@@ -20,6 +20,7 @@ use CodeIgniter\Config\AutoloadConfig;
  *
  * @immutable
  */
+$autoload['libraries'] = ['form_validation'];
 class Autoload extends AutoloadConfig
 {
     /**
@@ -47,7 +48,6 @@ class Autoload extends AutoloadConfig
     public $psr4 = [
         APP_NAMESPACE => APPPATH, // For custom app namespace
         'Config'      => APPPATH . 'Config',
-        'Model'       => APPPATH . 'Models',
     ];
 
     /**
@@ -99,5 +99,5 @@ class Autoload extends AutoloadConfig
      * @var string[]
      * @phpstan-var list<string>
      */
-    public $helpers = array('url');
+    public $helpers = [];
 }
